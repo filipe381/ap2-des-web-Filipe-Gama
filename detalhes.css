@@ -1,8 +1,5 @@
-/* detalhes.css */
-
-/* Reset de estilos padrão */
 * {
-    margin: 0;
+    margin-top: 10px;
     padding: 0;
     box-sizing: border-box;
   }
@@ -15,19 +12,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+   
   }
   
   /* Estilo para o container principal */
   .detalhes-container {
+    height: 10px;
     width: 80%;
     max-width: 600px;
+    margin: 0px auto 0; /* Adicionando margem automática para centralizar horizontalmente */
   }
   
   /* Estilo para o container do detalhes do jogador */
   .detalhes-jogador {
     background-color: #fff;
-    padding: 20px;
+    padding: 10px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
@@ -36,7 +35,7 @@
   /* Estilo para a imagem do jogador */
   #img-jogador {
     width: 150px;
-    height: 150px;
+    height: 250px;
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 15px;
@@ -45,7 +44,7 @@
   /* Estilo para o botão */
   #botao-voltar {
     padding: 8px 16px;
-    background-color: #007bff;
+    background-color: #333;
     color: #fff;
     border: none;
     border-radius: 4px;
@@ -54,7 +53,7 @@
   }
   
   #botao-voltar:hover {
-    background-color: #0056b3;
+    background-color: #333;
   }
   
   
