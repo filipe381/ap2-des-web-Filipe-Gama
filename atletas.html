@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="/escudo.png" sizes="16x16">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="atletas.css">
+  <title>Atletas Botafogo</title>
+</head>
+<body>
+  <div class="header">
+    <h1>Atletas Botafogo 2023-2</h1>
+    <button class='button' id="btnSair">Sair</button>
+    <div class="button-container">
+      <div class="select-container">
+        <label for="escolha">Escolha:</label>
+        <select id="escolha">
+          <option value="masculino">Masculino</option>
+          <option value="feminino">Feminino</option>
+          <option value="all">Elenco Todo</option>
+        </select>
+      </div>
+
+      <div class="buttons-desktop">
+        <button class="button" value="masculino">Masculino</button>
+        <button class="button" value="feminino">Feminino</button>
+        <button class="button" value="all">Elenco Todo</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="container-cartoes" class="card-container">
+    <!-- Aqui serão inseridos os cartões -->
+  </div>
+
+  <script src="atletas.js" defer></script>
+</body>
+</html>

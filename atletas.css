@@ -1,0 +1,183 @@
+body {
+  font-family: 'Archivo Black', sans-serif;
+}
+.header h1,
+.card h2,
+.card button,
+.select-container label,
+.select-container select,
+.card p,
+.button {
+  font-family: 'Archivo Black', sans-serif;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.button-container {
+  display: flex;
+}
+
+.buttons-desktop {
+  display: flex;
+  gap: 10px;
+}
+
+.button {
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  font-family: 'Archivo Black', sans-serif;
+  background-color: transparent;
+  color: white;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.button:hover {
+  background-color: white;
+  color: gray;
+}
+
+.sair {
+  padding: 8px 16px;
+  border-radius: 20px;
+  border: 2px solid white;
+  cursor: pointer;
+  font-family: 'Archivo Black', sans-serif;
+  background-color: transparent;
+  color: white;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.sair:hover {
+  background-color: white;
+  color: gray;
+}
+.select-container {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 768px) {
+  .buttons-desktop {
+    display: none;
+  }
+}
+
+
+.card {
+  width: 20rem;
+  background-color: #333;
+  text-align: center;
+  margin: auto;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  display: flex;
+  flex-direction: column; /* Para alinhar os elementos verticalmente */
+  align-items: center; 
+  text-decoration: none;
+}
+
+.card h2 {
+  margin-bottom: 10px;
+  color: white;
+  text-decoration: none;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 50%;
+}
+.card .card-content {
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+}
+.card button.saiba-mais {
+  background-color: transparent;
+  color: rgb(255, 255, 255);
+  border: 2px solid white;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  text-decoration: none;
+}
+.card button.saiba-mais:hover {
+  background-color: white;
+  color: gray;
+}
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.select-container {
+  margin-bottom: 1rem;
+}
+
+.buttons-desktop {
+  display: none;
+}
+
+@media (min-width: 769px) {
+  .button-container {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .select-container {
+    display: none;
+  }
+
+  .buttons-desktop {
+    display: flex;
+    flex-direction: row;
+  }
+}
+
+.card-container {
+  display: grid;
+  flex-wrap: wrap;
+  grid-template-columns: 1fr;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    max-width: 1024px;
+    margin: auto;
+  }
+}
+
+@media (min-width: 1025px) {
+  .card-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+  }
+}
