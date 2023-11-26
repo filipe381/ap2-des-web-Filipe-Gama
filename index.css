@@ -4,13 +4,11 @@ body {
   text-align: center;
   margin: 0;
 }
-
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
 header {
   background-color: #333; 
   color: white;
@@ -19,35 +17,28 @@ header {
   width: 100%;
   box-sizing: border-box;
 }
-
 h1 {
   margin: 0;
 }
-
 .example-image {
   max-width: 100%;
   margin-top: 20px;
 }
-
 .form-container {
   margin-top: 20px;
 }
-
 form {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
 label {
   margin-bottom: 5px;
 }
-
 input {
   padding: 8px;
   margin-bottom: 10px;
 }
-
 .button {
   background-color: #333;
   color: white;
@@ -58,7 +49,6 @@ input {
   margin: 5px;
   transition: background-color 0.3s;
 }
-
 .button:hover {
   background-color: #555; 
 }
